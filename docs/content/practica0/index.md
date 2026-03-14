@@ -1,7 +1,7 @@
 +++
 date = '2026-02-20T23:10:01-08:00'
 draft = false
-title = 'Practica0: Manejo de Repositorios'
+title = 'Practica 0: Manejo de Repositorios'
 +++
 
 ## Sesión 1: Markdown (El lenguaje de los devs)
@@ -15,7 +15,7 @@ Markdown es un lenguaje de marcado súper ligero. Básicamente, es escribir text
     * `#` para títulos (como este).
     * `**Negrita**` para resaltar lo importante.
     * `*` para hacer listas de tareas.
-    * `[Texto](URL)` para meter links a recursos cool.
+    * `[Texto](URL)` para meter links a recursos.
     * Bloques de código con tres tildes invertidas (\` \` \`) para que el código se vea limpio.
 
 ---
@@ -45,6 +45,12 @@ Aquí es donde todo se conecta. **Hugo** es un generador de sitios estáticos (S
 * **Crear el sitio:** Usé `hugo new site` y le puse un tema para que se vea profesional.
 * **Automatización (CI/CD):** Configuré un archivo `.yaml` en la carpeta de Workflows. Este archivo le dice a GitHub: *"Oye, cada vez que haga un push, construye el sitio de Hugo y súbelo a mi GitHub Pages"*.
 * **El resultado:** Una página web real, hosteada gratis y que se actualiza solita.
+
+---
+
+## Mis Enlaces
+* **Mi Portafolio en GitHub:** [https://github.com/kmeza1402/portafolio_PP]
+* **Mi Página en Vivo:** [(http://localhost:1313/practica0/)]
 
 ---
 
