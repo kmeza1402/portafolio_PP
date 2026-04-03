@@ -1,6 +1,6 @@
 +++
 date = '2026-02-20T23:15:19-08:00'
-draft = true
+draft = false
 title = 'Practica2: El paradigma orientado a objetos'
 +++
 
@@ -88,3 +88,57 @@ def calculate(self, hours: float, vehicle: Vehicle) -> float:
     return hours * 10.0
 
 ```
+
+
+## __MVC con Flask__
+
+La aplicación se estructuró para separar la lógica de negocio de la interfaz de usuario:
+
+- __Modelo (Model):__ Ubicado en la carpeta models/, contiene la lógica pura de Python y reglas de dominio.
+- __Vista (View):__ Plantillas HTML en templates/ que actúan como interfaz para el usuario final.
+- __Controlador (Controller):__ Archivo app.py, encargado de gestionar las peticiones HTTP y coordinar los flujos entre el modelo y la vista.
+
+
+## __Pruebas Manuales__
+
+<img src="./images/Entrada.png"/>
+<img src="./images/Resultado_entrada.png"/>
+<img src="./images/Calculo_cobro.png"/>
+<img src="./images/Salida.png"/>
+
+
+## __Coclusion__
+
+Al terminar esta práctica, lo más interesante no fue solo ver que el código funcionaba, sino entender por qué la POO y el MVC te salvan la vida cuando el proyecto crece. Al principio, en la Sesión 1 y 2, todo parecía muy teórico con las clases y los punteros, pero al llegar a la Sesión 3 y conectar Flask, me di cuenta de que si el "Modelo" (la lógica del estacionamiento) está bien hecho, la interfaz web es solo una "cara" más. Pude conectar los formularios de HTML sin tener que reescribir ni una sola función de mis clases originales, lo cual demuestra que el código es realmente modular.
+
+También me sirvió mucho para aterrizar conceptos que a veces se quedan en el aire. Por ejemplo, el polimorfismo se vuelve súper claro cuando ves que una sola función de cobro puede tratar de forma distinta a un carro y a una moto sin llenar el código de if/else interminables. Además, el trabajar con Flask te abre los ojos sobre cómo funcionan las aplicaciones que usamos a diario: esa separación entre lo que el usuario ve (Vista), lo que el servidor procesa (Controlador) y las reglas del negocio (Modelo) es lo que permite que los sistemas no se vuelvan un caos de espagueti. En resumen, la práctica me ayudó a pasar de "hacer que el código corra" a "diseñar una arquitectura" que sea fácil de mantener y escalar.
+
+## __Referencias__ 
+
+- classes. (s. f.). Python Documentation. https://docs.python.org/3/tutorial/classes.html
+- typing — Support for type hints. (s. f.). Python Documentation. https://docs.python.org/3/library/typing.html
+- Garcia, M. (2021, 6 febrero). Use a Flask Blueprint to Architect Your Applications. https://realpython.com/flask-blueprint/
+- Fowler, M. (s. f.). GUI Architectures. martinfowler.com. https://martinfowler.com/eaaDev/uiArchs.html
+
+
+## __Preguntas guia__
+
+- ¿Qué clase concentra la responsabilidad de asignar spots y por qué?
+  -  La clase ParkingLot. Al poseer la colección completa de objetos ParkingSpot, es la única entidad con la visibilidad necesaria para coordinar la búsqueda y validación de espacios disponibles.
+
+- ¿Qué invariantes protege tu modelo?  
+  - La exclusividad de ocupación: impide que un cajón albergue más de un vehículo simultáneamente.
+  - La restricción de categoría: asegura que solo vehículos del tipo permitido ocupen espacios específicos.
+- ¿Dónde se aplica polimorfismo y qué ventaja aporta? 
+  - En la política de cobro (RatePolicy). La ventaja radica en la extensibilidad del sistema, permitiendo agregar nuevos tipos de vehículos o reglas de cobro sin alterar la lógica interna del estacionamiento.
+- ¿Qué parte del sistema pertenece a Model, View y Controller en tu Flask?
+  - Model: Clases lógicas en la carpeta models/.
+  - View: Archivos .html en la carpeta templates/.
+  - Controller: Rutas y funciones decoradas en app.py.
+- Si mañana cambian las tarifas, ¿qué clase(es) tocarías y por qué?
+  - Únicamente la clase HourlyRatePolicy. Gracias al desacoplamiento, el resto del sistema es agnóstico a los valores numéricos de las tarifas, consumiendo solo el resultado del cálculo.
+
+
+## __Mis Enlaces__
+* **Mi Portafolio en GitHub:** [https://github.com/kmeza1402/portafolio_PP]
+* **Mi Página en Vivo:** [https://kmeza1402.github.io/portafolio_PP/]
