@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Procesar Cobro</title>
+    <style>
+        body { font-family: sans-serif; margin: 50px; background-color: #f0f2f5; }
+        .card { background: white; padding: 25px; border-radius: 10px; max-width: 400px; margin: auto; }
+        h2 { color: #d32f2f; }
+        label { display: block; margin: 10px 0 5px; font-weight: bold; }
+        input { width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; background: #d32f2f; color: white; border: none; padding: 12px; cursor: pointer; border-radius: 5px; font-size: 16px; }
+        .back { display: block; text-align: center; margin-top: 15px; color: #666; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Salida y Pago</h2>
+        <form action="/cobro" method="POST">
+            <label>ID del Ticket:</label>
+            <input type="number" name="id" required placeholder="Número de ticket">
+            
+            <label>Tiempo de Estancia (Horas):</label>
+            <input type="number" step="0.1" name="horas" required placeholder="Ej: 1.5">
+            
+            <button type="submit">Calcular Total</button>
+        </form>
+        <a href="/" class="back">← Volver al inicio</a>
+    </div>
+</body>
+</html>
