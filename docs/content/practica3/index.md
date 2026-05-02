@@ -1,6 +1,6 @@
 +++
 date = '2026-02-20T23:15:23-08:00'
-draft = true
+draft = false
 title = 'Practica3: El paradigma funcional'
 +++
 
@@ -78,4 +78,4 @@ Entender que el codigo no "cambia" cosas, sino que "transforma" datos, cambia la
 
 ## __Mis Enlaces__
 * **Mi Portafolio en GitHub:** [https://github.com/kmeza1402/portafolio_PP]
-* **Mi Página en Vivo:** [https://kmeza1402.github.io/portafolio_PP/]
+* **Mi Página en Vivo:** []
