@@ -101,10 +101,10 @@ La aplicación se estructuró para separar la lógica de negocio de la interfaz 
 
 ## __Pruebas Manuales__
 
-<img src="./images/Entrada.png"/>
-<img src="./images/Resultado_entrada.png"/>
-<img src="./images/Calculo_cobro.png"/>
-<img src="./images/Salida.png"/>
+![Entrada del sistema](./images/Entrada.png)
+![Resultado de entrada](./images/Resultado_entrada.png)
+![Cálculo de cobro](./images/Calculo_cobro.png)
+![Salida del sistema](./images/Salida.png)
 
 
 ## __Coclusion__

@@ -59,9 +59,9 @@ main = do
 
 ## __Pruebas Manuales__
 
-<img src="./images/setup.png"/>
-<img src="./images/corrio.png"/>
-<img src="./images/interaccion.png"/>
+![Configuración](./images/setup.png)
+![Ejecución](./images/corrio.png)
+![Interacción](./images/interaccion.png)
 
 
 ## __Coclusion__
