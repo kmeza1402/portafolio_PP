@@ -235,4 +235,4 @@ Por su parte, la Sesión 3 llevó este razonamiento a un nivel aplicado. Las Tor
 ## Mis Enlaces
 
 - **Mi Portafolio en GitHub:** [kmeza1402/portafolio_PP](https://github.com/kmeza1402/portafolio_PP)
-- **Mi Página en Vivo:** [kmeza1402.github.io/portafolio_PP/practica4]()
+- **Mi Página en Vivo:** [kmeza1402.github.io/portafolio_PP/practica4](https://kmeza1402.github.io/portafolio_PP/)
